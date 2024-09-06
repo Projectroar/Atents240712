@@ -145,7 +145,6 @@ public class Player : MonoBehaviour, IPlatformRide
 
     void Start()
     {
-<<<<<<< HEAD
         //VirtualStick stick = GameManager.Instance.Stick;
         //if (stick != null)
         //{
@@ -163,11 +162,6 @@ public class Player : MonoBehaviour, IPlatformRide
         VirtualPad virtualPad = GameManager.Instance.VirtualPad;
         virtualPad.SetStickBind(0, (inputDelta) => SetInput(inputDelta, inputDelta.sqrMagnitude > 0.0025f));
         virtualPad.SetButtonBind(0, Jump, onJumpCoolTimeChange);
-=======
-        VirtualPad virtualPad = GameManager.Instance.VirtualPad;
-        virtualPad.SetStickBind(0, (inputDelta) => SetInput(inputDelta, inputDelta.sqrMagnitude > 0.0025f));
-        virtualPad.SetButtonBind(0, Jump, ref onJumpCoolTimeChange);
->>>>>>> bc338778f32f4a12608f8d016edac856fe636b13
     }
 
     private void Update()

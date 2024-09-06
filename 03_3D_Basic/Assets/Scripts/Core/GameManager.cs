@@ -14,7 +14,6 @@ public class GameManager : Singleton<GameManager>
     /// </summary>
     public Player Player => player;
 
-<<<<<<< HEAD
     ///// <summary>
     ///// 가상 스틱
     ///// </summary>
@@ -43,16 +42,6 @@ public class GameManager : Singleton<GameManager>
     /// <summary>
     /// 가상패드 참조용 프로퍼티
     /// </summary>
-=======
-    /// <summary>
-    /// 가상 패드
-    /// </summary>
-    VirtualPad virtualPad;
-
-    /// <summary>
-    /// 가상패드 참조용 프로퍼티
-    /// </summary>
->>>>>>> bc338778f32f4a12608f8d016edac856fe636b13
     public VirtualPad VirtualPad => virtualPad;
 
 
@@ -61,14 +50,12 @@ public class GameManager : Singleton<GameManager>
     /// </summary>
     protected override void OnInitialize()
     {
-<<<<<<< HEAD
         player = FindAnyObjectByType<Player>();        
         //stick = FindAnyObjectByType<VirtualStick>();
         //jumpButton = FindAnyObjectByType<VirtualButton>();
 
-=======
-        player = FindAnyObjectByType<Player>();
->>>>>>> bc338778f32f4a12608f8d016edac856fe636b13
         virtualPad = FindAnyObjectByType<VirtualPad>();
     }
+
+
 }
